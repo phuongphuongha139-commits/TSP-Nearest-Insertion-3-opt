@@ -11,12 +11,8 @@ import math
 import time
 import os
 
-if not os.path.exists("data"):
-    if not os.path.exists("tsp-solver"):
-        os.system("git clone https://github.com/phuongphuongha139-commits/TSP-Nearest-Insertion-3-opt tsp-solver")
-    os.chdir("tsp-solver")
-
-print("Ready. Working directory:", os.getcwd())
+!git clone https://github.com/phuongphuongha139-commits/TSP-Nearest-Insertion-3-opt.git
+os.chdir("TSP-Nearest-Insertion-3-opt")
 
 # Known optimal tour lengths (TSPLIB)
 
